@@ -66,9 +66,9 @@ export function SearchModalCompnent() {
           {step === 1 ? (
             <>
               <DialogHeader>
-                <DialogTitle>Select a Country</DialogTitle>
+                <DialogTitle>Select a City</DialogTitle>
                 <DialogDescription>
-                  Pleae Choose a Country, so that what you want
+                  Pleae Choose a City, so that what you want
                 </DialogDescription>
               </DialogHeader>
 
@@ -98,7 +98,7 @@ export function SearchModalCompnent() {
               <DialogHeader>
                 <DialogTitle>Select all the info you need</DialogTitle>
                 <DialogDescription>
-                  Pleae Choose a Country, so that what you want
+                  Pleae Choose a City, so that what you want
                 </DialogDescription>
               </DialogHeader>
 

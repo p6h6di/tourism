@@ -18,15 +18,15 @@ export default function Map({ locationValue }: { locationValue: string }) {
     <MapContainer
       scrollWheelZoom={false}
       className="h-[50vh] rounded-lg relative z-0"
-      center={latLang ?? [52.505, -0.09]}
-      zoom={8}
+      center={latLang ?? [31.1048294, 77.1733901]}
+      zoom={12}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      <Marker position={latLang ?? [52.505, -0.09]} icon={ICON} />
+      <Marker position={latLang ?? [31.1048294, 77.1733901]} icon={ICON} />
     </MapContainer>
   );
 }

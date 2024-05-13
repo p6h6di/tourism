@@ -39,11 +39,11 @@ export default function AddressRoutw({ params }: { params: { id: string } }) {
           <div className="mb-5">
             <Select required onValueChange={(value) => setLocationValue(value)}>
               <SelectTrigger className="w-full">
-                <SelectValue placeholder="Select a Country" />
+                <SelectValue placeholder="Select a City" />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>Countries</SelectLabel>
+                  <SelectLabel>Cities</SelectLabel>
                   {getAllCountries().map((item) => (
                     <SelectItem key={item.value} value={item.value}>
                       {item.flag} {item.label} / {item.region}
