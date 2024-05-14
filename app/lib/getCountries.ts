@@ -1,14 +1,15 @@
-import countries from "world-countries";
-import { Country, State, City } from "country-state-city";
-// const countriesFormatted = countries.map((item) => ({
-//   value: item.cca2,
-//   label: item.name.common,
-//   flag: item.flag,
-//   latLang: item.latlng,
-//   region: item.region,
-// }));
+// import countries from "world-countries";
+import { City } from "country-state-city";
 
-const countriesFormatted = City.getCitiesOfState("IN", 'HP').map((item) => ({
+interface StateProps {
+value: string;
+label: string;
+flag: string;
+latLang:  (string | null | undefined)[];
+region: string;
+}
+
+const countriesFormatted: StateProps[] = City.getCitiesOfState("IN", 'HP').map((item) => ({
       value: item.name,
       label: item.name,
       flag: item.countryCode,

@@ -9,7 +9,7 @@ const inter = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Plan Quick",
+  title: "Genzawara",
   description:
     "Plan your next getaway with our user-friendly tools and expert tips.",
 };

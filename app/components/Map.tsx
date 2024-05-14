@@ -5,6 +5,8 @@ import "leaflet/dist/leaflet.css";
 import { useCountries } from "../lib/getCountries";
 import { icon } from "leaflet";
 
+// type LatLangType = [number, number];
+
 const ICON = icon({
   iconUrl:
     "https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-karten-standortmarkierung.png",
@@ -18,7 +20,7 @@ export default function Map({ locationValue }: { locationValue: string }) {
     <MapContainer
       scrollWheelZoom={false}
       className="h-[50vh] rounded-lg relative z-0"
-      center={latLang ?? [31.1048294, 77.1733901]}
+      center={[31.1048294, 77.1733901]}
       zoom={12}
     >
       <TileLayer
@@ -26,7 +28,7 @@ export default function Map({ locationValue }: { locationValue: string }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      <Marker position={latLang ?? [31.1048294, 77.1733901]} icon={ICON} />
+      <Marker position={[31.1048294, 77.1733901]} icon={ICON} />
     </MapContainer>
   );
 }
